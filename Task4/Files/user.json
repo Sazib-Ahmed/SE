@@ -1,0 +1,31 @@
+[
+    {
+        "username": "sazib",
+        "password": "11234576",
+        "age": "23",
+        "email": "ahmed9@gmail.com",
+        "mobile": "01871887499"
+        
+    },
+    {
+        "username": "abc",
+        "password": "123",
+        "age": "23",
+        "email": "sa@gmail.com",
+        "mobile": "01871887499"
+    },
+    {
+        "username": "abcd",
+        "password": "1234",
+        "age": "23",
+        "email": "saahmed9@gmail.com",
+        "mobile": "01871887499"
+    },
+    {
+        "username": "aaa",
+        "password": "111",
+        "age": "23",
+        "email": "sazib@gmail.com",
+        "mobile": "01871887499"
+    }
+]
