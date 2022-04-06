@@ -2,7 +2,13 @@
 include("../control/registrationcheck.php");
 ?>
 <html>
+    <head>
+<link rel="stylesheet" href="../CSS/mystyle.css" type="text/css">
+</head>
     <body>
+        <div class="position">
+        <p>Hello</p>
+</div>
         <form action="" method="post" enctype="multipart/form-data">
         <h2>Registration</h2><br>
         <b>___________________________________________________________________________________________________________________</b>
@@ -71,8 +77,8 @@ include("../control/registrationcheck.php");
 
         </table>
 
-        <input type="submit" name="submit" value="Submit">
-        <input type="reset" value="Reset">
+        <input type="submit" name="submit" class="button submitbutton" value="Submit">
+        <input type="reset" class="button resetbutton" value="Reset">
 
         
         </form>
