@@ -6,22 +6,39 @@ include("../control/registrationcheck.php");
 <link rel="stylesheet" href="../CSS/mystyle.css" type="text/css">
 </head>
     <body>
-        <div class="position">
-        <p>Hello</p>
+    <div class="header">
+  <h1>Registration</h1>
 </div>
-        <form action="" method="post" enctype="multipart/form-data">
+<div class="sticky">
+<div class="topnav">
+  <a href="#">Home</a>
+  <a href="#">About US</a>
+  <a href="#">Shop</a>
+</div>
+</div>
+
+
+        <div class="position">
+        <p>Hello, This is my webpage.</p>
+</div>
+        <form action="" method="post" enctype="multipart/form-data" onsubmit="return namecheck()">
         <h2>Registration</h2><br>
         <b>___________________________________________________________________________________________________________________</b>
+        
+        <div class="sticky">
+<div class="topnav">
         <table>
             <tr>
                 <td>First Name:</td>
-                <td><input type="text" name="firstname"></td> 
+                <td><input type="text" name="firstname" id="fname"></td> 
+                <p id="message"></p>
                 <td><?php echo $validatefname; ?> </td>
             </tr>
 
             <tr>
                 <td>Last Name: </td>
-                <td><input type="text" name="lastname"> </td>
+                <td><input type="text" name="lastname" id="lname"> </td>
+                
                 <td><?php echo $validatelname; ?> </td>
             </tr>
 
@@ -77,9 +94,10 @@ include("../control/registrationcheck.php");
 
         </table>
 
-        <input type="submit" name="submit" class="button submitbutton" value="Submit">
+        <input type="submit" name="submit" class="button submitbutton" value="Submit" onclick="namecheck()">
         <input type="reset" class="button resetbutton" value="Reset">
-
+        </div>
+</div>
         
         </form>
 
@@ -100,7 +118,7 @@ include("../control/registrationcheck.php");
         <table>
             <tr>
                 <td>First Name:</td>
-                <td><input type="text" name="searchdata"></td> 
+                <td><input type="text" name="searchdata" id="fname" onkeyup="" ></td> 
                
             </tr>
 
@@ -150,5 +168,7 @@ include("../control/registrationcheck.php");
 
         
         </form>
+
+    <script src="../js/myjs.js"></script>
     </body>
 </html>
